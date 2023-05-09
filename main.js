@@ -12,12 +12,12 @@ function main() {
     },
     width: 800,
     height: 600,
-    autoHideMenuBar: true
+    autoHideMenuBar: true,
+    frame: false
   })
 
   // load app/index.html as the window content
   mainWindow.loadFile(path.join('app', 'index.html'));
-  mainWindow.webContents.openDevTools();
 }
 
 app.on('ready', main);
